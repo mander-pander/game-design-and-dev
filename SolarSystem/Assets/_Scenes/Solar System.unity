@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 194376516}
   - component: {fileID: 194376515}
   - component: {fileID: 194376514}
+  - component: {fileID: 194376518}
+  - component: {fileID: 194376519}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -220,6 +222,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194376518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194376513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60633a54adab34a95bedb4188e3f4de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 194376517}
+  speed: 15
+--- !u!114 &194376519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194376513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60633a54adab34a95bedb4188e3f4de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1049768873}
+  speed: 10
 --- !u!1 &1049768869
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +263,7 @@ GameObject:
   - component: {fileID: 1049768871}
   - component: {fileID: 1049768870}
   - component: {fileID: 1049768874}
+  - component: {fileID: 1049768875}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -380,6 +411,20 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1049768875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049768869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60633a54adab34a95bedb4188e3f4de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1049768873}
+  speed: 30
 --- !u!1 &1129907526
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +615,8 @@ GameObject:
   - component: {fileID: 1516904481}
   - component: {fileID: 1516904480}
   - component: {fileID: 1516904479}
+  - component: {fileID: 1516904484}
+  - component: {fileID: 1516904483}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -655,3 +702,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1516904483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516904478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60633a54adab34a95bedb4188e3f4de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 194376517}
+  speed: 35
+--- !u!114 &1516904484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516904478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60633a54adab34a95bedb4188e3f4de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1516904482}
+  speed: 25
